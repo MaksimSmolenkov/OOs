@@ -51,6 +51,12 @@ public class Move
         // _movable.SetupGet(m => m.Position).Returns(new int[] { 1, 1 });
     }
 
+    [Given("изменить положение в пространстве космического корабля невозможно")]
+    [Obsolete]
+    public void NotSetPosition()
+    {
+        _movable.SetupSet(m => m.Position).Throws<Exception>();
+    }
     [Then(@"возникает ошибка Exception")]
     public void ТоВозникаетОшибкаException()
     {

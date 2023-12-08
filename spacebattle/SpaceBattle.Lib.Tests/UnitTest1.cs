@@ -4,12 +4,6 @@ namespace SpaceBattle.Lib.Tests;
 
 public class MoveCommandTest
 {
-
-    // 1. Всё работает
-    // 2. Не читается Position
-    // 3. Не читается Velocity
-    // 4. Не пишется в Position
-
     [Fact]
     public void MoveCommandPositive()
     {
